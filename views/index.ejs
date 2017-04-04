@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    Details:
+    <input type="file" name="details" id="details">
+    LCS:
+    <input type="file" name="lcs" id="lcs">
+    CAPT:
+    <input type="file" name="capt" id="capt">
+    <input type="submit" value="upload" name="submit">
+  </form>
+  
+</html>
